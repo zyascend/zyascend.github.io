@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
   });
 
-  $.get('http://101.200.39.102:39001/api/gallery/getPhotos', function (result) {
+  $.get('http://api.shyshyshy.icu/api/gallery/getPhotos', function (result) {
     picList = result.photos.concat(picList)
     recaculate();
   })
